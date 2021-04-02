@@ -85,3 +85,23 @@ O seu time desenvolveu as seguintes histórias:
 
 > Gostaríamos muito que você nos enviasse o resultado em até 5 dias, mas se você precisar de mais tempo, basta nos avisar!
 ---
+
+### Instruções para rodar a automação 
+* Baixar e instalar [JDK](https://www.oracle.com/br/java/technologies/javase/javase-jdk8-downloads.html) e [Eclipse](https://www.eclipse.org/downloads/)
+* Baixar o código da automação
+* Abrir o Eclipse e importar o projeto da automação no workspace
+* Buildar o projeto
+* Abrir a Classe Runner.java e executar utilizando o JUnit Test 
+
+### Tempo gasto com o Desafio
+* Foram investidas cerca de 8 horas
+
+### Técnicas e Estratégias utilizadas
+* Para as modelagens foi utilizada a técnica de Particionamento de Equivalência
+* Para a automação dos testes foi utilizado:
+  * Cucumber, para que possa ser utilizado BDD 
+  * Java, como linguagem de programação(escolhida por questão de preferencia pessoal) 
+  * JUnit, para rodar as suites de teste
+  * Selenium, para fazer o mapeamento e ações no browser da automação
+  * Maven, para gerenciar as dependencias do projeto
+  * Cucumber-Report, para gerar relatórios das execuções da automação
