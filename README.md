@@ -99,7 +99,7 @@ O seu time desenvolveu as seguintes histórias:
 ### Técnicas e Estratégias utilizadas
 * Para as modelagens foi utilizada a técnica de Particionamento de Equivalência
 * Para a automação dos testes foi utilizado:
-  * Cucumber, para que possa ser utilizado BDD 
+  * Cucumber, para que possa ser utilizado BDD nas automações 
   * Java, como linguagem de programação(escolhida por questão de preferencia pessoal) 
   * JUnit, para rodar as suites de teste
   * Selenium, para fazer o mapeamento e ações no browser da automação
