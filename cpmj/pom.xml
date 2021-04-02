@@ -1,0 +1,91 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>br.com</groupId>
+	<artifactId>cpmj</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<!-- Inicio das properties de versoes utilizados no projeto -->
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.compiler.version>1.8</java.compiler.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.compiler.version>1.8</java.compiler.version>
+		<maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
+		<org.apache.maven.plugins.maven-surefire-plugin.version>3.0.0-M5
+		</org.apache.maven.plugins.maven-surefire-plugin.version>
+		<io.cucumber.version>5.4.0</io.cucumber.version>
+		<io.cucumber-plugin.version>5.4.0</io.cucumber-plugin.version>
+		<org.seleniumhq.selenium.version>4.0.0-alpha-4</org.seleniumhq.selenium.version>
+		<junit.version> 4.13.2</junit.version>
+		<commons-io.version>2.8.0</commons-io.version>
+		<cucumber.report.version>4.0.0</cucumber.report.version>
+	</properties>
+	<!-- Fim das properties de versoes utilizados no projeto -->
+	<!-- Inicio das dependencias utilizadas no projeto -->
+	<dependencies>
+		<!-- Dependencias do Cucumber -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>${io.cucumber.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-junit</artifactId>
+			<version>${io.cucumber.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-plugin</artifactId>
+			<version>${io.cucumber-plugin.version}</version>
+		</dependency>
+		<!-- Dependencia do Selenium -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>${org.seleniumhq.selenium.version}</version>
+		</dependency>
+		<!-- Dependencia do Junit -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
+		</dependency>
+		<!-- Dependencia do Commons -->
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>${commons-io.version}</version>
+		</dependency>
+		<!-- Dependencia do Cucumber Report -->
+		<dependency>
+			<groupId>net.masterthought</groupId>
+			<artifactId>cucumber-reporting</artifactId>
+			<version>${cucumber.report.version}</version>
+		</dependency>
+	</dependencies>
+	<!-- Fim das dependencias utilizadas no projeto -->
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>${maven.compiler.plugin.version}</version>
+					<configuration>
+						<source>${java.compiler.version}</source>
+						<target>${java.compiler.version}</target>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>${org.apache.maven.plugins.maven-surefire-plugin.version}
+					</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+</project>

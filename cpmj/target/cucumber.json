@@ -1,0 +1,235 @@
+[
+  {
+    "line": 4,
+    "elements": [
+      {
+        "start_timestamp": "2021-04-02T05:09:27.239Z",
+        "line": 7,
+        "name": "Validar visualização de produto através da barra de pesquisa",
+        "description": "",
+        "id": "efetuar-compra-na-loja;validar-visualização-de-produto-através-da-barra-de-pesquisa",
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 22946985900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "efetuar um novo cadastro",
+            "match": {
+              "location": "cpmj.StepDefinition.CriarContaSteps.efetuar_um_novo_cadastro()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 7503465600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "logar com o usuário",
+            "match": {
+              "location": "cpmj.StepDefinition.LoginSteps.logar_com_o_usuário()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 3779002000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "pesquisar o item \"Faded Short Sleeve T-shirts\" no site",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Faded Short Sleeve T-shirts\"",
+                  "offset": 17
+                }
+              ],
+              "location": "cpmj.StepDefinition.CheckoutSteps.pesquisar_o_item_no_site(java.lang.String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 572692300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "validar que o resultado da busca consta o item",
+            "match": {
+              "location": "cpmj.StepDefinition.CheckoutSteps.validar_que_o_resultado_da_busca_consta_o_item()"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@validar_historias"
+          },
+          {
+            "name": "@historia1"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-02T05:10:02.130Z",
+        "line": 14,
+        "name": "Validar produto na tela de checkout",
+        "description": "",
+        "id": "efetuar-compra-na-loja;validar-produto-na-tela-de-checkout",
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 21006370500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "efetuar um novo cadastro",
+            "match": {
+              "location": "cpmj.StepDefinition.CriarContaSteps.efetuar_um_novo_cadastro()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 7417427500,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "logar com o usuário",
+            "match": {
+              "location": "cpmj.StepDefinition.LoginSteps.logar_com_o_usuário()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 13858193600,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "adicionar o item \"Faded Short Sleeve T-shirts\" no carrinho",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Faded Short Sleeve T-shirts\"",
+                  "offset": 17
+                }
+              ],
+              "location": "cpmj.StepDefinition.CheckoutSteps.adicionar_o_item_no_carrinho(java.lang.String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 588659600,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "validar que o produto foi adicionado ao carrinho",
+            "match": {
+              "location": "cpmj.StepDefinition.CheckoutSteps.validar_que_o_produto_foi_adicionado_ao_carrinho()"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@validar_historias"
+          },
+          {
+            "name": "@historia2"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-02T05:10:45.005Z",
+        "line": 21,
+        "name": "Validar que a mensagem de serviço ao consumidor foi enviada com sucesso",
+        "description": "",
+        "id": "efetuar-compra-na-loja;validar-que-a-mensagem-de-serviço-ao-consumidor-foi-enviada-com-sucesso",
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 19413978500,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "efetuar um novo cadastro",
+            "match": {
+              "location": "cpmj.StepDefinition.CriarContaSteps.efetuar_um_novo_cadastro()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 7152454800,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "logar com o usuário",
+            "match": {
+              "location": "cpmj.StepDefinition.LoginSteps.logar_com_o_usuário()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 4209306600,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "enviar uma mensagem ao serviço ao consumidor",
+            "match": {
+              "location": "cpmj.StepDefinition.ContatarSteps.enviar_uma_mensagem_ao_servico_ao_consumidor()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 570658300,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "validar que a mensagem foi enviada com sucesso",
+            "match": {
+              "location": "cpmj.StepDefinition.ContatarSteps.validar_que_a_mensagem_foi_enviada_com_sucesso()"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@validar_historias"
+          },
+          {
+            "name": "@historia3"
+          }
+        ]
+      }
+    ],
+    "name": "Efetuar compra na loja",
+    "description": "",
+    "id": "efetuar-compra-na-loja",
+    "keyword": "Funcionalidade",
+    "uri": "file:src/test/java/resources/features/teste.feature",
+    "tags": [
+      {
+        "name": "@validar_historias",
+        "type": "Tag",
+        "location": {
+          "line": 3,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
